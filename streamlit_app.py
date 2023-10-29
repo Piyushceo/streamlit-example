@@ -53,8 +53,8 @@ sharpened_image.save('sharpened_image.jpg')
 
 # Show the sharpened image (optional)
 
-!sudo apt install tesseract-ocr
-!pip install pytesseract
+# !sudo apt install tesseract-ocr
+# !pip install pytesseract
 
 import pytesseract
 extractedInformation = pytesseract.image_to_string(sharpened_image, lang='eng',config='--psm 4')
